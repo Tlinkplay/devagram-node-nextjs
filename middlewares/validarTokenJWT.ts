@@ -44,4 +44,3 @@ export const validarTokenJWT = (handler : NextApiHandler) =>
 
     return handler(req, res);
 }
-
