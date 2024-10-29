@@ -45,7 +45,7 @@ const handler = nc()
         await PublicacaoModel.create(publicacao);
         return res.status(200).json({msg : 'Publicação criada com sucesso'});
 
-    }catch(e){
+    }catch{
             return res.status(400).json({erro : 'Erro ao cadastrar publicação'});
         }    
 });
