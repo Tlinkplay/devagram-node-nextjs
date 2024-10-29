@@ -6,6 +6,7 @@ import { compileFunction } from 'vm';
 import { UsuarioModel } from '../../../models/UsuarioModel';
 import nc from 'next-connect';
 import {updload, updloadImagemComisc} from '../../../services/uploadImagemCosmic';
+import { politicaCORS } from '../../../middlewares/politicaCORS';
 
 const handler = nc()
     .use(updload.single('file'))
@@ -60,4 +61,4 @@ const handler = nc()
         }
     }
 
-export default validarTokenJWT(conectarMongoDB(handler));
+export default politicaCORS(validarTokenJWT(conectarMongoDB(handler)));
