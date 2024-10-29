@@ -3,7 +3,6 @@ import type {RespostaPadraoMsg} from '../../../types/RespostaPadraoMsg';
 import { conectarMongoDB } from "../../../middlewares/conectarMongoDB";
 import { validarTokenJWT } from "../../../middlewares/validarTokenJWT";
 import { UsuarioModel } from "../../../models/UsuarioModel";
-import { useEffect } from "react";
 import { PublicacaoModel } from "../../../models/PublicacaoModel";
 import { politicaCORS } from "../../../middlewares/politicaCORS";
 

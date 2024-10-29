@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse, NextApiHandler } from "next";
 import type {RespostaPadraoMsg} from '../types/RespostaPadraoMsg';
 import NextCors from "nextjs-cors";
-import { METHODS } from "http";
 
 export const politicaCORS = (handler : NextApiHandler) => 
     async (req : NextApiRequest, res : NextApiResponse<RespostaPadraoMsg>) => {

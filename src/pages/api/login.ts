@@ -5,7 +5,6 @@ import type {LoginResposta} from '../../../types/LoginResposta';
 import md5 from 'md5';
 import { UsuarioModel } from '../../../models/UsuarioModel';
 import jwt from 'jsonwebtoken';
-import { validarTokenJWT } from '../../../middlewares/validarTokenJWT';
 import { politicaCORS } from '../../../middlewares/politicaCORS';
 
 const endpointLogin = async (
